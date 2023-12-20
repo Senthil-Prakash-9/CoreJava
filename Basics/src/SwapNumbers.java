@@ -6,6 +6,11 @@ public class SwapNumbers {
         x = y;
         y = temp;
         System.out.println("Number after swapping is "+x+" and "+y);
+        swapUsingArithmeticOperator(x,y);
+    }
 
+    public static void swapUsingArithmeticOperator(int x, int y){
+        x = (x+y)-(y=x);
+        System.out.println("Number after swapping using arithmetic operator is "+x+" and "+y);
     }
 }
